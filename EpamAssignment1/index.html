@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="trigger()" style="font-family: Arial; padding:20px;">
+
+    <p id="hover"><b>Welcome customer !!!</b></p>
+
+    <p id="demo">
+        Follow the below steps to get Diwali coupon:<br>
+        1) Enter your customer ID in the textbox.<br>
+        2) Click on Validate Customer button.<br>
+        3) Click on Register button to hide the above steps and apply for coupons.<br>
+    </p>
+
+    <button type="button" onclick="registerCustomer()">
+        Click here to Register
+    </button>
+
+    <br><br>
+
+    Enter Customer ID:
+    <input id="custID" type="text" placeholder="Enter ID">
+
+    <br><br>
+
+    <button type="button" onclick="validateCustomer()">
+        Validate Customer
+    </button>
+
+    <button type="button" onclick="generateCoupon()">
+        Click here to Generate Coupon
+    </button>
+
+    <p id="result" style="color:blue; font-weight:bold;"></p>
+    <p id="coupon" style="color:green; font-weight:bold;"></p>
+
+</body>
+</html>
