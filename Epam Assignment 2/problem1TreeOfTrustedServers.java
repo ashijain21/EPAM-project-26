@@ -8,7 +8,7 @@ public class problem1TreeOfTrustedServers {
     static int trustedCount = 0;
 
     static void dfs(int node, int parent, int currentXor) {
-
+        currentXor ^=key[node];
         if (currentXor >= K) {
             trustedCount++;
         }
